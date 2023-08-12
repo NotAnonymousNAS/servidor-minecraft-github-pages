@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Control de servidor Minecraft</title>
+</head>
+<body>
+    <h1>Control de servidor Minecraft</h1>
+    <button id="startButton">Iniciar Servidor</button>
+    <button id="stopButton">Detener Servidor</button>
+    <pre id="output"></pre>
+    
+    <script>
+        const startButton = document.getElementById('startButton');
+        const stopButton = document.getElementById('stopButton');
+        const output = document.getElementById('output');
+
+        startButton.addEventListener('click', () => {
+            output.textContent = 'Iniciando el servidor Minecraft...';
+        });
+
+        stopButton.addEventListener('click', () => {
+            output.textContent = 'Deteniendo el servidor Minecraft...';
+        });
+    </script>
+</body>
+</html>
